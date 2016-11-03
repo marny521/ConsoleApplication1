@@ -16,16 +16,19 @@ namespace ConsoleApplication1
 
         static void Looop (int count)
         {
+            //Loopa 25 gånger
             if (count < 25)
             {
-                //Kör
+               
                 Console.WriteLine(count);
                 Looop(count+1);
             }
+            
+            //Stanna loopen
             else
             {
-                //Stop
-                Looop(1);
+                count = 0;
+                Looop(count);
             }
 
         }
