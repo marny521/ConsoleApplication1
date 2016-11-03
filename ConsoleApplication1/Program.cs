@@ -11,6 +11,23 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             Console.WriteLine("Hund");
+            Looop(1);
+        }
+
+        static void Looop (int count)
+        {
+            if (count < 25)
+            {
+                //Kör
+                Console.WriteLine(count);
+                Looop(count+1);
+            }
+            else
+            {
+                //Stop
+                Looop(1);
+            }
+
         }
     }
 }
